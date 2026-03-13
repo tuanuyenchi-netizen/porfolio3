@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Hoàng Thuỳ Trang Portfolio</title>
+<title>Tuấn Uyển Chi Portfolio</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -21,16 +21,8 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#FFF8F0;
-color:#2E2E2E;
-background-image:radial-gradient(#C38D9E 1px, transparent 1px);
-background-size:40px 40px;
-animation:sparkle 2s infinite alternate;
-}
-
-@keyframes sparkle{
-0%{opacity:1;}
-100%{opacity:0.9;}
+background:linear-gradient(135deg,#e3f2fd,#ffffff);
+color:#1a1a1a;
 }
 
 /* NAVBAR */
@@ -39,12 +31,12 @@ nav{
 display:flex;
 justify-content:center;
 padding:20px;
-background:#C38D9E;
+background:#0a66c2;
 }
 
 nav ul{
 display:flex;
-gap:25px;
+gap:30px;
 list-style:none;
 }
 
@@ -67,61 +59,57 @@ width:180px;
 height:180px;
 object-fit:cover;
 border-radius:50%;
-border:4px solid #C38D9E;
+border:4px solid #0a66c2;
 margin-bottom:20px;
-animation:glow 1.5s infinite alternate;
+transition:0.5s;
 }
 
-@keyframes glow{
-from{
-box-shadow:0 0 5px #C38D9E;
-}
-to{
-box-shadow:0 0 25px #C38D9E;
-}
+.hero img:hover{
+transform:scale(1.05);
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 margin-bottom:10px;
-color:#C38D9E;
+color:#0a66c2;
 }
 
 .hero p{
 font-size:18px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 
 .buttons{
-margin-top:20px;
+margin-top:25px;
 }
 
 .buttons a{
 display:inline-block;
-padding:10px 20px;
-margin:5px;
-background:#C38D9E;
+padding:12px 22px;
+margin:6px;
+background:#0a66c2;
 color:white;
 text-decoration:none;
-border-radius:20px;
-transition:0.3s;
+border-radius:30px;
+font-size:15px;
+transition:0.35s;
 }
 
 .buttons a:hover{
-background:#a86c7f;
-transform:scale(1.05);
+background:#004182;
+transform:translateY(-3px);
 }
 
 /* SECTION */
 
 section{
-padding:60px 15%;
+padding:70px 15%;
 }
 
 h2{
 margin-bottom:20px;
-color:#C38D9E;
+color:#0a66c2;
 }
 
 /* CARDS */
@@ -129,20 +117,20 @@ color:#C38D9E;
 .card-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .card{
 background:white;
 padding:25px;
 border-radius:12px;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-transition:0.3s;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.4s;
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 30px rgba(0,0,0,0.2);
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
 /* IMAGE */
@@ -152,7 +140,6 @@ display:block;
 margin:40px auto;
 width:300px;
 border-radius:12px;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card img{
@@ -161,19 +148,25 @@ border-radius:10px;
 margin-bottom:10px;
 }
 
+/* CONTACT */
+
+.contact i{
+color:#0a66c2;
+margin-right:8px;
+}
+
 /* FOOTER */
 
 footer{
 text-align:center;
 padding:30px;
-background:#C38D9E;
+background:#0a66c2;
 color:white;
 margin-top:40px;
 }
 
 </style>
 </head>
-
 
 <body>
 
@@ -192,14 +185,20 @@ margin-top:40px;
 
 <img src="trang.jpg">
 
-<h1>Hoàng Thuỳ Trang</h1>
+<h1>Tuấn Uyển Chi</h1>
 
-<p>International Economics Student | FTU</p>
+<p>International Economics Student | Foreign Trade University</p>
 
 <div class="buttons">
-<a href="#">LinkedIn</a>
-<a href="#">GitHub</a>
-<a href="#">Download CV</a>
+
+<a href="https://www.linkedin.com" target="_blank">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://github.com/tuanuyenchi-netizen" target="_blank">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
+
 </div>
 
 </div>
@@ -212,11 +211,11 @@ margin-top:40px;
 <div class="card-container">
 
 <div class="card">
-I am a third-year student at Foreign Trade University. I am passionate about global economic development, sustainable business, and international trade.
+I am currently studying International Economics at Foreign Trade University. I have a strong interest in global trade, economic cooperation, and the dynamics of international markets.
 </div>
 
 <div class="card">
-I am particularly interested in how sustainability and responsible business practices can shape the future of economic growth.
+Through academic studies and extracurricular activities, I aim to develop analytical thinking, communication skills, and a global perspective in economic issues.
 </div>
 
 </div>
@@ -242,28 +241,23 @@ I am particularly interested in how sustainability and responsible business prac
 
 <section id="projects">
 
-<h2>Projects</h2>
+<h2>Projects & Experience</h2>
 
 <div class="card-container">
 
 <div class="card">
-<h3>ESG Research</h3>
-<p>Conducted research on ESG performance of Vietnamese listed companies.</p>
+<h3>Import – Export Internship</h3>
+<p>Completed an internship at Anvu Company, gaining exposure to international trade operations and learning about export–import procedures.</p>
 </div>
 
 <div class="card">
-<h3>Panel Data Analysis</h3>
-<p>Used Stata to analyze panel datasets and examine economic relationships.</p>
+<h3>Trade Documentation Practice</h3>
+<p>Assisted in reviewing business documents related to trade transactions and observed how companies handle logistics and customs processes.</p>
 </div>
 
 <div class="card">
-<h3>Economic Development Study</h3>
-<p>Studied Middle-Income Trap and Kuznets Curve.</p>
-</div>
-
-<div class="card">
-<h3>Economic Policy Analysis</h3>
-<p>Analyzed policy impacts on sustainable development.</p>
+<h3>Economic Research Projects</h3>
+<p>Worked on academic research projects related to international economics and global trade policies.</p>
 </div>
 
 </div>
@@ -283,11 +277,17 @@ I am particularly interested in how sustainability and responsible business prac
 
 <img src="gec.jpg">
 
-<h3>External Relations Department Member</h3>
+<h3>Organizing Committee Member</h3>
 
-<p>Global Economics Club – Foreign Trade University</p>
+<p>MFC Club – Responsible for supporting event organization and coordination.</p>
 
-<p>Worked on partnership development and event organization.</p>
+</div>
+
+<div class="card">
+
+<h3>MC & Fashion Activities</h3>
+
+<p>Participated in hosting and fashion-related activities, developing confidence in public speaking and stage presence.</p>
 
 </div>
 
@@ -300,10 +300,11 @@ I am particularly interested in how sustainability and responsible business prac
 
 <h2>Contact</h2>
 
-<div class="card">
+<div class="card contact">
 
-<p><i class="fa-solid fa-envelope"></i> ttreng2@gmail.com</p>
-<p><i class="fa-solid fa-phone"></i> 0835157856</p>
+<p><i class="fa-solid fa-envelope"></i> tuanuyenchi@gmail.com</p>
+
+<p><i class="fa-solid fa-phone"></i> 0912272711</p>
 
 </div>
 
@@ -312,10 +313,9 @@ I am particularly interested in how sustainability and responsible business prac
 
 <footer>
 
-© 2026 Hoàng Thuỳ Trang Portfolio
+© 2026 Tuấn Uyển Chi Portfolio
 
 </footer>
-
 
 </body>
 </html>

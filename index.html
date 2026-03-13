@@ -16,18 +16,11 @@ box-sizing:border-box;
 font-family:Arial;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
-/* BACKGROUND */
-
 body{
 background:linear-gradient(135deg,#e8f6f6,#f7fbfb);
-min-height:100vh;
 }
 
-/* NAV */
+/* NAVBAR */
 
 nav{
 display:flex;
@@ -54,12 +47,9 @@ color:#1d3557;
 display:flex;
 flex-direction:column;
 align-items:center;
-justify-content:center;
 text-align:center;
 padding:90px 20px;
 }
-
-/* AVATAR */
 
 .hero img{
 width:200px;
@@ -68,12 +58,6 @@ object-fit:cover;
 border-radius:50%;
 border:5px solid #a8dadc;
 margin-bottom:20px;
-transition:0.5s;
-}
-
-.hero img:hover{
-transform:scale(1.07);
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 .hero h1{
@@ -89,7 +73,7 @@ font-size:18px;
 /* BUTTON */
 
 .buttons{
-margin-top:25px;
+margin-top:20px;
 }
 
 .buttons a{
@@ -100,12 +84,6 @@ background:#a8dadc;
 border-radius:25px;
 text-decoration:none;
 color:#1d3557;
-transition:0.3s;
-}
-
-.buttons a:hover{
-background:#74c0c3;
-transform:translateY(-3px);
 }
 
 /* SECTION */
@@ -117,10 +95,9 @@ padding:70px 15%;
 h2{
 margin-bottom:25px;
 color:#457b9d;
-text-align:center;
 }
 
-/* CARD */
+/* CARDS */
 
 .card-container{
 display:grid;
@@ -133,38 +110,18 @@ background:white;
 padding:25px;
 border-radius:12px;
 box-shadow:0 8px 18px rgba(0,0,0,0.08);
-transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-8px);
+.card img{
+width:100%;
+border-radius:10px;
+margin-top:10px;
 }
 
-/* PROJECT GALLERY */
-
-.project-gallery{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-margin-top:40px;
-}
-
-.project-gallery img{
-width:260px;
-border-radius:12px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.project-gallery img:hover{
-transform:scale(1.05);
-}
-
-/* CONTACT */
+/* CONTACT LEFT */
 
 .contact{
-text-align:center;
+text-align:left;
 font-size:18px;
 }
 
@@ -227,15 +184,11 @@ margin-top:40px;
 <div class="card-container">
 
 <div class="card">
-
-I am currently studying International Economics at Foreign Trade University. My academic interests focus on international trade, global economic cooperation, and sustainable development.
-
+I am currently studying International Economics at Foreign Trade University. My interests focus on international trade, global economic cooperation, and sustainable development.
 </div>
 
 <div class="card">
-
 Through academic learning and extracurricular activities, I continuously develop analytical thinking, teamwork ability, and communication skills.
-
 </div>
 
 </div>
@@ -257,6 +210,8 @@ Through academic learning and extracurricular activities, I continuously develop
 Interned at Anvu Company where I observed international trade operations and gained exposure to import–export procedures.
 </p>
 
+<img src="project1.jpg">
+
 </div>
 
 <div class="card">
@@ -267,16 +222,9 @@ Interned at Anvu Company where I observed international trade operations and gai
 Assisted in reviewing business documents and learned about logistics, contracts, and customs processes.
 </p>
 
-</div>
-
-</div>
-
-
-<div class="project-gallery">
-
-<img src="project1.jpg">
-
 <img src="project2.jpg">
+
+</div>
 
 </div>
 
@@ -297,6 +245,8 @@ Assisted in reviewing business documents and learned about logistics, contracts,
 Participated in organizing club events and supporting coordination activities.
 </p>
 
+<img src="mfc.jpg">
+
 </div>
 
 <div class="card">
@@ -308,13 +258,6 @@ Engaged in hosting and fashion-related activities, improving stage presence and 
 </p>
 
 </div>
-
-</div>
-
-
-<div class="project-gallery">
-
-<img src="mfc.jpg">
 
 </div>
 
@@ -341,7 +284,6 @@ Engaged in hosting and fashion-related activities, improving stage presence and 
 © 2026 Tuan Uyen Chi Portfolio
 
 </footer>
-
 
 </body>
 </html>

@@ -75,23 +75,18 @@ text-align:center;
 padding:40px;
 }
 
-/* AVATAR FIXED CENTER */
+/* AVATAR FIX */
 
 .hero img{
-width:220px;
-height:220px;
+width:200px;
+height:200px;
 border-radius:50%;
 object-fit:cover;
-object-position:50% 35%;
+object-position:center;
 display:block;
 margin:0 auto 20px auto;
 border:6px solid #a8dadc;
-box-shadow:0 0 35px rgba(168,218,220,0.9);
-transition:0.4s;
-}
-
-.hero img:hover{
-transform:scale(1.05);
+box-shadow:0 0 30px rgba(168,218,220,0.9);
 }
 
 .hero h1{
@@ -191,8 +186,13 @@ padding:10px;
 cursor:pointer;
 }
 
-.prev{ left:10px; }
-.next{ right:10px; }
+.prev{
+left:10px;
+}
+
+.next{
+right:10px;
+}
 
 /* CONTACT */
 
@@ -249,7 +249,7 @@ font-size:14px;
 
 <div class="hero">
 
-<img src="uchi.jpg" alt="Tuan Uyen Chi">
+<img src="uchi.jpg">
 
 <h1 id="name"></h1>
 
@@ -322,14 +322,18 @@ Passionate about economic research, data analysis and international cooperation.
 <h2>Contact</h2>
 
 <div class="contact">
+
 <p>📧 tuanuyenchi@gmail.com</p>
 <p>📱 0912272711</p>
+
 </div>
 
 </section>
 
 <footer>
+
 © 2026 Tuan Uyen Chi Portfolio
+
 </footer>
 
 <script>
@@ -389,11 +393,17 @@ showSlide()
 /* PARTICLES */
 
 particlesJS("particles-js",{
+
 particles:{
+
 number:{value:60},
+
 size:{value:3},
+
 move:{speed:2}
+
 }
+
 })
 
 </script>

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tuan Uyen Chi Portfolio</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -28,12 +31,17 @@ animation:bgmove 12s infinite alternate;
 100%{background-position:100% 50%;}
 }
 
+/* NAV */
+
 nav{
 display:flex;
 justify-content:center;
 padding:18px;
 background:#a8dadc;
 box-shadow:0 3px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:100;
 }
 
 nav ul{
@@ -53,6 +61,8 @@ nav a:hover{
 color:white;
 }
 
+/* HERO */
+
 .hero{
 display:flex;
 flex-direction:column;
@@ -60,8 +70,6 @@ align-items:center;
 text-align:center;
 padding:100px 20px;
 }
-
-/* Avatar circle */
 
 .hero img{
 width:220px;
@@ -76,7 +84,7 @@ transition:0.5s;
 
 .hero img:hover{
 transform:scale(1.07);
-box-shadow:0 0 45px rgba(69,123,157,0.8);
+box-shadow:0 0 45px rgba(69,123,157,0.9);
 }
 
 .hero h1{
@@ -88,7 +96,6 @@ margin-top:18px;
 .hero p{
 margin-top:10px;
 font-size:18px;
-color:#333;
 }
 
 .buttons{
@@ -103,8 +110,8 @@ background:#a8dadc;
 border-radius:25px;
 text-decoration:none;
 color:#1d3557;
-transition:0.3s;
 font-weight:bold;
+transition:0.3s;
 }
 
 .buttons a:hover{
@@ -113,6 +120,8 @@ color:white;
 transform:translateY(-3px);
 }
 
+/* SECTION */
+
 section{
 padding:80px 15%;
 }
@@ -120,8 +129,10 @@ padding:80px 15%;
 h2{
 margin-bottom:30px;
 color:#457b9d;
-font-size:28px;
+font-size:30px;
 }
+
+/* CARDS */
 
 .card-container{
 display:grid;
@@ -129,11 +140,8 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
 
-/* Glass style card */
-
 .card{
-background:rgba(255,255,255,0.8);
-backdrop-filter:blur(6px);
+background:white;
 padding:25px;
 border-radius:14px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
@@ -144,6 +152,42 @@ transition:0.4s;
 transform:translateY(-8px);
 box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
+
+/* SKILLS */
+
+.skill{
+margin-bottom:18px;
+}
+
+.skill span{
+font-weight:bold;
+}
+
+.bar{
+background:#ddd;
+height:8px;
+border-radius:10px;
+margin-top:6px;
+}
+
+.progress{
+height:8px;
+background:#457b9d;
+border-radius:10px;
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:3px solid #457b9d;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:20px;
+}
+
+/* GALLERY */
 
 .gallery{
 display:grid;
@@ -158,7 +202,6 @@ height:200px;
 object-fit:cover;
 border-radius:12px;
 transition:0.4s;
-cursor:pointer;
 }
 
 .gallery img:hover{
@@ -166,12 +209,11 @@ transform:scale(1.08);
 box-shadow:0 12px 25px rgba(0,0,0,0.2);
 }
 
-.contact{
-font-size:18px;
-}
+/* CONTACT */
 
 .contact p{
 margin-bottom:10px;
+font-size:18px;
 }
 
 .contact i{
@@ -188,18 +230,22 @@ font-weight:bold;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
+
 <ul>
 <li><a href="#">Home</a></li>
 <li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
-<li><a href="#activities">Activities</a></li>
+<li><a href="#education">Education</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
 
 <div class="hero">
@@ -220,6 +266,10 @@ font-weight:bold;
 <i class="fa-brands fa-github"></i> GitHub
 </a>
 
+<a href="#">
+<i class="fa-solid fa-file"></i> Download CV
+</a>
+
 </div>
 
 </div>
@@ -238,6 +288,27 @@ I am currently studying International Economics at Foreign Trade University. My 
 Through academic learning and extracurricular activities, I develop analytical thinking, teamwork ability and communication skills.
 </div>
 
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">
+<span>International Trade Knowledge</span>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<span>Communication</span>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span>Teamwork</span>
+<div class="bar"><div class="progress" style="width:88%"></div></div>
 </div>
 
 </section>
@@ -272,29 +343,29 @@ Practiced reviewing logistics documents, contracts and customs processes.
 
 </section>
 
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Foreign Trade University</h3>
+<p>Bachelor in International Economics</p>
+</div>
+
+<div class="timeline-item">
+<h3>Relevant Focus</h3>
+<p>International Trade, Global Economics, Business Communication</p>
+</div>
+
+</div>
+
+</section>
+
 <section id="activities">
 
 <h2>Activities</h2>
-
-<div class="card-container">
-
-<div class="card">
-
-<h3>MFC Club Organizing Committee</h3>
-
-<p>Participated in organizing club events.</p>
-
-</div>
-
-<div class="card">
-
-<h3>MC & Fashion Activities</h3>
-
-<p>Hosting and fashion show activities.</p>
-
-</div>
-
-</div>
 
 <div class="gallery">
 
@@ -327,4 +398,5 @@ Practiced reviewing logistics documents, contracts and customs processes.
 </footer>
 
 </body>
+
 </html>

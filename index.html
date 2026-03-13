@@ -23,14 +23,8 @@ scroll-behavior:smooth;
 /* BACKGROUND */
 
 body{
-background:linear-gradient(135deg,#e8f6f6,#f5fbfb);
+background:linear-gradient(135deg,#e8f6f6,#f7fbfb);
 min-height:100vh;
-animation:bgmove 10s infinite alternate;
-}
-
-@keyframes bgmove{
-0%{background-position:left;}
-100%{background-position:right;}
 }
 
 /* NAV */
@@ -57,6 +51,10 @@ color:#1d3557;
 /* HERO */
 
 .hero{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
 text-align:center;
 padding:90px 20px;
 }
@@ -70,9 +68,6 @@ object-fit:cover;
 border-radius:50%;
 border:5px solid #a8dadc;
 margin-bottom:20px;
-display:block;
-margin-left:auto;
-margin-right:auto;
 transition:0.5s;
 }
 
@@ -113,19 +108,19 @@ background:#74c0c3;
 transform:translateY(-3px);
 }
 
-/* SECTIONS */
+/* SECTION */
 
 section{
 padding:70px 15%;
 }
 
 h2{
-margin-bottom:20px;
+margin-bottom:25px;
 color:#457b9d;
 text-align:center;
 }
 
-/* CARDS */
+/* CARD */
 
 .card-container{
 display:grid;
@@ -145,19 +140,25 @@ transition:0.3s;
 transform:translateY(-8px);
 }
 
-/* IMAGE */
+/* PROJECT GALLERY */
 
-.section-img{
-display:block;
-margin:40px auto;
-width:300px;
-border-radius:12px;
+.project-gallery{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:40px;
 }
 
-.card img{
-width:100%;
-border-radius:10px;
-margin-bottom:10px;
+.project-gallery img{
+width:260px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.project-gallery img:hover{
+transform:scale(1.05);
 }
 
 /* CONTACT */
@@ -188,7 +189,6 @@ margin-top:40px;
 <body>
 
 <nav>
-
 <ul>
 <li><a href="#">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -196,7 +196,6 @@ margin-top:40px;
 <li><a href="#activities">Activities</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-
 </nav>
 
 
@@ -212,7 +211,9 @@ margin-top:40px;
 
 <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
 
-<a href="https://github.com/tuanuyenchi-netizen"><i class="fa-brands fa-github"></i> GitHub</a>
+<a href="https://github.com/tuanuyenchi-netizen">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
 
 </div>
 
@@ -227,14 +228,13 @@ margin-top:40px;
 
 <div class="card">
 
-I am an International Economics student at Foreign Trade University.  
-My academic interests focus on global trade, international cooperation, and economic development.
+I am currently studying International Economics at Foreign Trade University. My academic interests focus on international trade, global economic cooperation, and sustainable development.
 
 </div>
 
 <div class="card">
 
-I enjoy participating in extracurricular activities that strengthen communication skills, teamwork, and creativity.
+Through academic learning and extracurricular activities, I continuously develop analytical thinking, teamwork ability, and communication skills.
 
 </div>
 
@@ -254,28 +254,31 @@ I enjoy participating in extracurricular activities that strengthen communicatio
 <h3>Import – Export Internship</h3>
 
 <p>
-
-Completed an internship at Anvu Company where I observed international trade processes and learned about export–import operations.
-
+Interned at Anvu Company where I observed international trade operations and gained exposure to import–export procedures.
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>Business Documentation</h3>
+<h3>Trade Documentation Practice</h3>
 
 <p>
-
-Supported the review of business documents related to logistics, contracts, and trade procedures.
-
+Assisted in reviewing business documents and learned about logistics, contracts, and customs processes.
 </p>
 
 </div>
 
 </div>
 
-<img src="project.jpg" class="section-img">
+
+<div class="project-gallery">
+
+<img src="project1.jpg">
+
+<img src="project2.jpg">
+
+</div>
 
 </section>
 
@@ -291,9 +294,7 @@ Supported the review of business documents related to logistics, contracts, and 
 <h3>MFC Club Organizing Committee</h3>
 
 <p>
-
 Participated in organizing club events and supporting coordination activities.
-
 </p>
 
 </div>
@@ -303,16 +304,19 @@ Participated in organizing club events and supporting coordination activities.
 <h3>MC & Fashion Activities</h3>
 
 <p>
-
-Engaged in hosting and fashion-related activities, improving stage presence and public speaking confidence.
-
+Engaged in hosting and fashion-related activities, improving stage presence and communication skills.
 </p>
 
 </div>
 
 </div>
 
-<img src="mfc.jpg" class="section-img">
+
+<div class="project-gallery">
+
+<img src="mfc.jpg">
+
+</div>
 
 </section>
 

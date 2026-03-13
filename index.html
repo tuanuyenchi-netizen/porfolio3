@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <title>Hoàng Thuỳ Trang Portfolio</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 
 *{
@@ -21,20 +23,28 @@ scroll-behavior:smooth;
 body{
 background:#FFF8F0;
 color:#2E2E2E;
+background-image:radial-gradient(#C38D9E 1px, transparent 1px);
+background-size:40px 40px;
+animation:sparkle 2s infinite alternate;
+}
+
+@keyframes sparkle{
+0%{opacity:1;}
+100%{opacity:0.9;}
 }
 
 /* NAVBAR */
 
 nav{
 display:flex;
-justify-content:space-between;
-padding:20px 10%;
+justify-content:center;
+padding:20px;
 background:#C38D9E;
 }
 
 nav ul{
 display:flex;
-gap:20px;
+gap:25px;
 list-style:none;
 }
 
@@ -42,6 +52,7 @@ nav a{
 color:white;
 text-decoration:none;
 font-weight:bold;
+font-size:16px;
 }
 
 /* HERO */
@@ -78,7 +89,28 @@ color:#C38D9E;
 
 .hero p{
 font-size:18px;
-opacity:0.9;
+}
+
+/* BUTTONS */
+
+.buttons{
+margin-top:20px;
+}
+
+.buttons a{
+display:inline-block;
+padding:10px 20px;
+margin:5px;
+background:#C38D9E;
+color:white;
+text-decoration:none;
+border-radius:20px;
+transition:0.3s;
+}
+
+.buttons a:hover{
+background:#a86c7f;
+transform:scale(1.05);
 }
 
 /* SECTION */
@@ -102,11 +134,10 @@ gap:20px;
 
 .card{
 background:white;
-color:#2E2E2E;
 padding:25px;
 border-radius:12px;
 box-shadow:0 10px 20px rgba(0,0,0,0.1);
-transition:all 0.3s ease;
+transition:0.3s;
 }
 
 .card:hover{
@@ -114,7 +145,7 @@ transform:translateY(-10px);
 box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* PROJECT IMAGE */
+/* IMAGE */
 
 .exp-img{
 display:block;
@@ -123,8 +154,6 @@ width:300px;
 border-radius:12px;
 box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
-
-/* ACTIVITIES IMAGE */
 
 .card img{
 width:100%;
@@ -148,8 +177,6 @@ margin-top:40px;
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
 <ul>
 <li><a href="#">Home</a></li>
@@ -161,8 +188,6 @@ margin-top:40px;
 </nav>
 
 
-<!-- HERO -->
-
 <div class="hero">
 
 <img src="trang.jpg">
@@ -171,10 +196,14 @@ margin-top:40px;
 
 <p>International Economics Student | FTU</p>
 
+<div class="buttons">
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="#">Download CV</a>
 </div>
 
+</div>
 
-<!-- ABOUT -->
 
 <section id="about">
 
@@ -195,8 +224,6 @@ I am particularly interested in how sustainability and responsible business prac
 </section>
 
 
-<!-- SKILLS -->
-
 <section>
 
 <h2>Skills</h2>
@@ -213,8 +240,6 @@ I am particularly interested in how sustainability and responsible business prac
 </section>
 
 
-<!-- PROJECTS -->
-
 <section id="projects">
 
 <h2>Projects</h2>
@@ -223,22 +248,22 @@ I am particularly interested in how sustainability and responsible business prac
 
 <div class="card">
 <h3>ESG Research</h3>
-<p>Conducted research on the ESG performance of Vietnamese listed companies by reviewing corporate sustainability disclosures and relevant ESG frameworks 📊.</p>
+<p>Conducted research on ESG performance of Vietnamese listed companies.</p>
 </div>
 
 <div class="card">
 <h3>Panel Data Analysis</h3>
-<p>Utilized Stata to work with economic panel datasets, applying statistical tools to examine relationships between variables over time.</p>
+<p>Used Stata to analyze panel datasets and examine economic relationships.</p>
 </div>
 
 <div class="card">
 <h3>Economic Development Study</h3>
-<p>Studied key development economics concepts, including the Middle-Income Trap and the Kuznets Curve.</p>
+<p>Studied Middle-Income Trap and Kuznets Curve.</p>
 </div>
 
 <div class="card">
 <h3>Economic Policy Analysis</h3>
-<p>Conducted a study on economic policy impacts on sustainable development and international trade.</p>
+<p>Analyzed policy impacts on sustainable development.</p>
 </div>
 
 </div>
@@ -247,8 +272,6 @@ I am particularly interested in how sustainability and responsible business prac
 
 </section>
 
-
-<!-- ACTIVITIES -->
 
 <section id="activities">
 
@@ -264,7 +287,7 @@ I am particularly interested in how sustainability and responsible business prac
 
 <p>Global Economics Club – Foreign Trade University</p>
 
-<p>Worked in the External Relations Department to support partnership development and event organization.</p>
+<p>Worked on partnership development and event organization.</p>
 
 </div>
 
@@ -273,16 +296,14 @@ I am particularly interested in how sustainability and responsible business prac
 </section>
 
 
-<!-- CONTACT -->
-
 <section id="contact">
 
 <h2>Contact</h2>
 
 <div class="card">
 
-<p>Email: ttreng2@gmail.com</p>
-<p>Phone number: 0835157856</p>
+<p><i class="fa-solid fa-envelope"></i> ttreng2@gmail.com</p>
+<p><i class="fa-solid fa-phone"></i> 0835157856</p>
 
 </div>
 
@@ -295,41 +316,6 @@ I am particularly interested in how sustainability and responsible business prac
 
 </footer>
 
-html{
-scroll-behavior:smooth;
-}
 
-body{
-background:#FFF8F0;
-color:#2E2E2E;
-background-image:radial-gradient(#C38D9E 1px, transparent 1px);
-background-size:40px 40px;
-animation:sparkle 1.5s infinite alternate;
-}
-
-h1,h2,h3{
-color:#C38D9E;
-}
-
-@keyframes sparkle{
-0%{
-opacity:1;
-}
-100%{
-opacity:0.85;
-}
-}
-
-section{
-padding:60px 15%;
-animation:fadeIn 1s ease;
-}
-
-.exp-img{
-width:100%;
-border-radius:10px;
-margin-top:20px;
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
-}
 </body>
 </html>
